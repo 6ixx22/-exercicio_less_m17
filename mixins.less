@@ -1,8 +1,10 @@
 .media(@width) {
-    @media screen and (max-width: @width) {
-      .container {
-        max-width: 80%;
-      }
-    }
+  @media screen and (max-width: @width) {
+    @arguments();
   }
-  
+}
+
+.reset-margin-padding {
+  margin: 0;
+  padding: 0;
+}

@@ -1,40 +1,22 @@
+@import "variaveis.less";
+@import "mixins.less";
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Roboto, sans-serif;
-  }
-  
-  body {
-    background-color: @secondary-bg;
-  }* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Roboto, sans-serif;
-  }
-  
-  body {
-    background-color: @secondary-bg;
-  }
-  
-  .container {
-    max-width: 1024px;
-    width: 100%;
-    margin: 0 auto;
-  }
-  
-  li {
-    list-style: none;
-  }
-  
-  .container {
-    max-width: 1024px;
-    width: 100%;
-    margin: 0 auto;
-  }
-  
-  li {
-    list-style: none;
-  }
-  
+  .reset-margin-padding();
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: @secondary-bg;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
