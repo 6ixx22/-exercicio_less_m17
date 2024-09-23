@@ -5,30 +5,29 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "less": "^4.2.0"
-  },
-  "scripts": {
-    "less": "less",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "dependencies": {
-    "copy-anything": "^2.0.6",
-    "errno": "^0.1.8",
+    "copy-anything": "^4.0.2",
+    "errno": "^1.0.0",
     "graceful-fs": "^4.2.11",
     "iconv-lite": "^0.6.3",
-    "image-size": "^0.5.5",
-    "is-what": "^3.14.1",
-    "make-dir": "^2.1.0",
-    "mime": "^1.6.0",
+    "image-size": "^1.1.1",
+    "is-what": "^5.0.2",
+    "less": "^4.2.0",
+    "less-watch-compiler": "^1.16.3",
+    "make-dir": "^5.0.0",
+    "mime": "^4.0.4",
     "needle": "^3.3.1",
-    "parse-node-version": "^1.0.1",
-    "pify": "^4.0.1",
+    "parse-node-version": "^2.0.0",
+    "pify": "^6.1.0",
     "prr": "^1.0.1",
     "safer-buffer": "^2.1.2",
     "sax": "^1.4.1",
-    "semver": "^5.7.2",
-    "source-map": "^0.6.1",
+    "semver": "^7.6.3",
+    "source-map": "^0.7.4",
     "tslib": "^2.7.0"
+  },
+  "scripts": {
+    "less": "npx less-watch-compiler ./src/styles ./build/styles main.less",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "description": ""
